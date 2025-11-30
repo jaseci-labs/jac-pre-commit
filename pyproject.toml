@@ -1,0 +1,40 @@
+[build-system]
+requires = ["setuptools>=45", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "jac-pre-commit"
+version = "0.1.0"
+description = "Pre-commit hooks for Jac language formatting and type checking"
+readme = "README.md"
+license = {file = "LICENSE"}
+requires-python = ">=3.10"
+keywords = ["jac", "jaclang", "pre-commit", "linting", "formatting"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Environment :: Console",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Software Development :: Quality Assurance",
+]
+dependencies = [
+    "jaclang>=0.7.0",
+]
+
+[project.urls]
+Homepage = "https://github.com/Jaseci-Labs/jac-pre-commit"
+Repository = "https://github.com/Jaseci-Labs/jac-pre-commit"
+Issues = "https://github.com/Jaseci-Labs/jac-pre-commit/issues"
+
+[project.scripts]
+jac-format = "hooks.jac_format:main"
+jac-check = "hooks.jac_check:main"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["hooks*"]

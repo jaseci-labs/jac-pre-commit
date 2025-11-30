@@ -1,0 +1,1 @@
+"""Jac pre-commit hooks."""
