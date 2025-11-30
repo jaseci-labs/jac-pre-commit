@@ -16,7 +16,7 @@ Add the following to your `.pre-commit-config.yaml`:
 ```yaml
 repos:
   - repo: https://github.com/Jaseci-Labs/jac-pre-commit
-    rev: v0.9.1  # Use the latest release tag
+    rev: v0.9.2  # Use the latest release tag
     hooks:
       - id: jac-format
       - id: jac-check
@@ -77,7 +77,7 @@ Performs static type analysis on Jac files to catch type errors before runtime.
 ## Requirements
 
 - Python 3.10+
-- [jaclang](https://pypi.org/project/jaclang/) >= 0.9.1
+- [jaclang](https://pypi.org/project/jaclang/) >= 0.9.2
 
 ## Development
 
