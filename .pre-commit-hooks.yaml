@@ -1,0 +1,17 @@
+- id: jac-format
+  name: Jac Format
+  description: Format Jac files with consistent code style
+  entry: jac-format
+  language: python
+  types: [file]
+  files: \.jac$
+  require_serial: false
+
+- id: jac-check
+  name: Jac Check
+  description: Type check Jac files for errors
+  entry: jac-check
+  language: python
+  types: [file]
+  files: \.jac$
+  require_serial: false
