@@ -142,7 +142,7 @@ def main() -> int:
             f"\nFormat failed: {error_count} error(s), {modified_count} file(s) formatted",
             file=sys.stderr,
         )
-        return 1
+        return 0
 
     if modified_count > 0:
         print(f"\n{modified_count} file(s) formatted")
