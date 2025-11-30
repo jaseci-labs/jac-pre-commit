@@ -23,7 +23,7 @@ classifiers = [
     "Topic :: Software Development :: Quality Assurance",
 ]
 dependencies = [
-    "jaclang>=0.7.0",
+    "jaclang>=0.9.1",
 ]
 
 [project.urls]
